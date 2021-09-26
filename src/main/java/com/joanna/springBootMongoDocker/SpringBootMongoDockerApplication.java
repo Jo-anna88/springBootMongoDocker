@@ -13,12 +13,12 @@ public class SpringBootMongoDockerApplication {
 	}
 
 	////////////////////////////// for testing purposes //////////////////////////////
-	@Bean
-	CommandLineRunner runner(ProductRepository repo) {
-		return args -> {
-			Producer producer = new Producer("AppleCompany", "Poland");
-			Product product = new Product(ProductName.APPLE,3.50, 3, producer);
-			repo.insert(product);
-		};
-	}
+//	@Bean
+//	CommandLineRunner runner(ProductRepository repo) {
+//		return args -> {
+//			Producer producer = new Producer("AppleCompany", "Poland");
+//			Product product = new Product(ProductName.APPLE,3.50, 3, producer);
+//			repo.insert(product);
+//		};
+//	}
 }
